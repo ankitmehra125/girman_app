@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "336258048021",
+    "project_id": "girmantech",
+    "storage_bucket": "girmantech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336258048021:android:922c80bf8db60ba5bbee1c",
+        "android_client_info": {
+          "package_name": "com.example.girman_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJdEBBtRUY_a-uYhLpiP_soDman9Ec3L8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

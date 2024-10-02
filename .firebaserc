@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "girmantech": "girmantech",
+    "default": "girmantech"
+  },
+  "targets": {},
+  "etags": {}
+}
