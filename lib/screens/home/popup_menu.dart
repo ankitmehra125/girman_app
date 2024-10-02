@@ -162,8 +162,9 @@ void showItemMenu(BuildContext context) {
 
 
 void _launchURL(String url) async {
-  if (await canLaunch(url)) {
-    await launch(url);
+  final Uri uri = Uri.parse(url);
+  if (await canLaunchUrl(uri)) {
+    await launchUrl(uri, mode: LaunchMode.externalApplication);
   } else {
     throw 'Could not launch $url';
   }
@@ -176,8 +177,8 @@ void _launchEmail(String email) async {
     query: 'subject=Contact Inquiry', // Optional: Add a subject
   );
 
-  if (await canLaunch(emailLaunchUri.toString())) {
-    await launch(emailLaunchUri.toString());
+  if (await canLaunchUrl(emailLaunchUri)) {
+    await launchUrl(emailLaunchUri);
   } else {
     throw 'Could not launch $email';
   }
